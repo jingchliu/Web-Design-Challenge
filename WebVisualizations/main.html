@@ -4,34 +4,45 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Landing</a></title>
+  <title>Welcome</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="visualizations/style.css">
-  <header class="header_bar">
+  <header style="width: -webkit-fill-available;">
     <nav>
-      <ul> 
-        <li><h1 id="heading"><a href="main.html">Latitude</a></h1></li>
-        <li class="nav_top"><button class="dropbtn"><a href="data.html">Data</a></button></li>
-        <li class="nav_top"><button class="dropbtn"><a href="comparison.html">Comparision</a></button></li>
-        <li class="nav_top">  
-          <div class="dropdown">
-            <button class="dropbtn">Plots</button>
-            <div class="dropdown-content">
-              <a href="temp.html"> Max Temperature</a>
-              <a href="humidity.html">Humidity</a>
-              <a href="cloudiness.html">Cloudiness</a>
-              <a href="wind.html">Wind Speed</a>
-            </div>
-          </div>
-          <!-- <select>
-            <option value="">Plots</option>
-            <option value="Temperature"><a href="temp.html"> Max Temperature</a></option>
-            <option value="Humidity"><a href="humidity.html">Humidity</a></option>
-            <option value="Cloudiness"><a href="cloudiness.html">Cloudiness</a></option>
-            <option value="Wind Speed"><a href="wind.html">Wind Speed</a></option>
-          </select> -->
-        </li>
+      <h1 id="heading" style="float: left;"><a href="main.html">Latitude</a></h1>
+      <d/div> 
+        <div id="md_nav">
+          <li class="dropdown"><button class="dropbtn" style="margin-right: 50px;"><a href="data.html">Data</a></button></li>
+          <li class="dropdown"><button class="dropbtn"><a href="comparison.html">Comparision</a></button></li>
+          <li class="dropdown">
+              <button class="dropbtn">Plots</button>
+                <div class="dropdown-content">
+                  <a href="temp.html"> Max Temperature</a>
+                  <a href="humidity.html">Humidity</a>
+                  <a href="cloudiness.html">Cloudiness</a>
+                  <a href="wind.html">Wind Speed</a>
+                </div>
+          </li>
+        </div>
       </ul>
+      <div id="hidden_when_md"> 
+        <div class="dropdown">
+          <button class="dropbtn" style="margin-right: 35px;">Site Navigation</button>
+            <div class="dropdown-content">
+              <a href="data.html">Data</a>
+              <a href="comparison.html">Comparision</a> 
+              <a id="sub">Plots
+                <span class="drop-icon" style="text-align: right;">▾</span></a>
+                <div class="dropdown-content1">
+                  <a href="temp.html"> Max Temperature</a>
+                  <a href="humidity.html">Humidity</a>
+                  <a href="cloudiness.html">Cloudiness</a>
+                  <a href="wind.html">Wind Speed</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -39,30 +50,30 @@
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col-md-8">
+    <div class="row" >
+      <div class="col-md-7 col-sm-12_main">
         <h1 id="h11">Sumamry: Latitude vs. X</h1>
         <hr id="hr1">   
           <img id="summary" src="Resources/assets/images/Fig1.png" alt="summary" ALIGN="Top"/>   
           <p>The purpose of this project was to analyze how weather changes as you get closer to the equater. To accoplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
           <p>After assembing the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source date and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>      
       </div>
-      <div class='col-md-3'>
+      <div class='col-md-4 col-sm-12_visual'>
         <div class="row">
           <h2>Visualizations</h2>
         </div>    
         <hr id="hr2">    
         <div class="row">
-          <div class="col-md-6">
-            <img id=" " src="Resources/assets/images/Fig1.png" alt="summary" ALIGN="Top"/>   
+          <div class="col-md-6 col-sm-3">
+            <img id="temp" src="Resources/assets/images/Fig1.png" alt="temp" ALIGN="Top"/>   
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-3">
             <img id="humidity" src="Resources/assets/images/Fig2.png" alt="humidity" ALIGN="Top"/>   
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-3">
             <img id="cloudiness" src="Resources/assets/images/Fig3.png" alt="cloudiness" ALIGN="Top"/>   
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-3">
             <img id="wind" src="Resources/assets/images/Fig4.png" alt="wind" ALIGN="Top"/>   
           </div>
       </div>

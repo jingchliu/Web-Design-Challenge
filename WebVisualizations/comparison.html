@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparision</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="visualizations/style.css">
+  <header style="width: -webkit-fill-available;">
+    <nav>
+      <h1 id="heading" style="float: left;"><a href="main.html">Latitude</a></h1>
+      <d/div> 
+        <div id="md_nav">
+          <li class="dropdown"><button class="dropbtn" style="margin-right: 50px;"><a href="data.html">Data</a></button></li>
+          <li class="dropdown"><button class="dropbtn"><a href="comparison.html">Comparision</a></button></li>
+          <li class="dropdown">
+              <button class="dropbtn">Plots</button>
+                <div class="dropdown-content">
+                  <a href="temp.html"> Max Temperature</a>
+                  <a href="humidity.html">Humidity</a>
+                  <a href="cloudiness.html">Cloudiness</a>
+                  <a href="wind.html">Wind Speed</a>
+                </div>
+          </li>
+        </div>
+      </ul>
+      <div id="hidden_when_md"> 
+        <div class="dropdown">
+          <button class="dropbtn" style="margin-right: 35px;">Site Navigation</button>
+            <div class="dropdown-content">
+              <a href="data.html">Data</a>
+              <a href="comparison.html">Comparision</a> 
+              <a id="sub">Plots
+                <span class="drop-icon" style="text-align: right;">▾</span></a>
+                <div class="dropdown-content1">
+                  <a href="temp.html"> Max Temperature</a>
+                  <a href="humidity.html">Humidity</a>
+                  <a href="cloudiness.html">Cloudiness</a>
+                  <a href="wind.html">Wind Speed</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</head>
+
+<body>
+    <div class="container" style="max-width: -webkit-fill-available;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="h11">Comparision: Latitude vs. X</h1>
+                <hr id="hr1">  
+                <p style="text-indent: 35px;">Click any plot to get an in-depth analysis.</p>
+            </div>
+        </div>
+        <div class="row" style="background-color: white;">
+                <div class="col-sm-12 col-md-6">
+                    <h4>vs. Max Temperature<h4>
+                    <a href="temp.html">
+                        <img id="temp" src="Resources/assets/images/Fig1.png" alt="temp"/>   
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <h4>vs. Humidity<h4>
+                    <a href="humidity.html">
+                        <img id="humidity" src="Resources/assets/images/Fig2.png" alt="humidity"/>   
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <h4>vs. Cloudiness<h4>
+                    <a href="cloudiness.html">
+                        <img id="cloudiness" src="Resources/assets/images/Fig3.png" alt="cloudiness"/>   
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <h4>vs. Wind Speed<h4>
+                    <a href="wind.html">
+                        <img id="wind" src="Resources/assets/images/Fig4.png" alt="wind"/>   
+                    </a>
+                </div>
+        </div>
+    </div>
+          
+  
+  
+  <div class="footer">
+    <hr id="hr3">
+    <p id="footer">All rights reserved</p>
+  </div>
+
+
+</body>
+
+</html>
+
+
+
